@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="leaf-detail leaf-left"></div>
+    <div class="leaf-detail leaf-right"></div>
+
+    <header class="accessibility-bar">
+        <div class="accessibility-group">
+            <button onclick="alterarFonte(1)" title="Aumentar Letra">A+</button>
+            <button onclick="alterarFonte(-1)" title="Diminuir Letra">A-</button>
+            <button onclick="alterarBrilho(10)" title="Aumentar Brilho">💡+</button>
+            <button onclick="alterarBrilho(-10)" title="Diminuir Brilho">💡-</button>
+            <button onclick="toggleConteudo()" title="Modo Claro/Escuro">🌗 Modo</button>
+        </div>
+        
+        <div class="accessibility-group">
+            <label for="daltonismo-select">Daltonismo:</label>
+            <select id="daltonismo-select" onchange="aplicarDaltonismo(this.value)">
+                <option value="normal">Normal</option>
+                <option value="deuteranopia">Deuteranopia (Verde)</option>
+                <option value="protanopia">Protanopia (Vermelho)</option>
+                <option value="tritanopia">Tritanopia (Azul)</option>
+                <option value="acromatopsia">Acromatopsia (Monocromático)</option>
+            </select>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <h1>Agro Forte, Futuro Sustentável 🌿</h1>
+            <p>Conectando a tradição da terra com a inovação do futuro para garantir uma produção limpa, consciente e abundante.</p>
+        </section>
+
+        <section class="cards-container">
+            
+            <div class="card" onclick="alert('Tecnologia e Precisão: Sensores detectam as necessidades exatas de cada planta.')">
+                <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=500&auto=format&fit=crop&q=80" alt="Monitoramento de plantação de alta tecnologia">
+                <div class="card-content">
+                    <h3>Tecnologia de Precisão</h3>
+                    <p>O uso de inteligência artificial e satélites otimizando as colheitas e eliminando o desperdício.</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="alert('Energia Solar: Fazendas gerando sua própria energia limpa.')">
+                <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=500&auto=format&fit=crop&q=80" alt="Painéis solares no campo">
+                <div class="card-content">
+                    <h3>Energia Limpa</h3>
+                    <p>Fazendas modernas operando de forma autossustentável através da captação solar e biomassa.</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="alert('Manejo Orgânico: Respeito à terra e alimentos muito mais saudáveis.')">
+                <img src="https://images.unsplash.com/photo-1592417817098-8f3d6eb18865?w=500&auto=format&fit=crop&q=80" alt="Mãos segurando solo fértil com broto">
+                <div class="card-content">
+                    <h3>Cultivo Consciente</h3>
+                    <p>Práticas biológicas e orgânicas que preservam os nutrientes da terra e protegem os polinizadores.</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="alert('Uso da Água: Irrigação inteligente gota a gota economiza até 70% de recursos hídricos.')">
+                <img src="https://api.aecweb.com.br/tematico/img_figuras/gestao%20conservacao%20de%20agua%200505%201%20WEB._Olho%24%240.webp" alt="Gotículas de água em folhas verdes">
+                <div class="card-content">
+                    <h3>Gestão de Água</h3>
+                    <p>Sistemas hidropônicos e irrigação automatizada que economizam e reutilizam nossos recursos mais preciosos.</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="alert('Florestas Produtivas: Sistemas que unem árvores nativas, pastagens e lavouras no mesmo espaço.')">
+                <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=500&auto=format&fit=crop&q=80" alt="Campos verdes e árvores ao pôr do sol">
+                <div class="card-content">
+                    <h3>Agrofloresta</h3>
+                    <p>A perfeita harmonia entre a produção de alimentos e a regeneração de florestas nativas locais.</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="alert('Logística Verde: Embalagens biodegradáveis e transporte de baixa emissão de carbono.')">
+                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=500&auto=format&fit=crop&q=80" alt="Caixas de produtos agrícolas frescos colhidos">
+                <div class="card-content">
+                    <h3>Distribuição Sustentável</h3>
+                    <p>Cadeias de suprimento otimizadas que encurtam a distância entre o campo e a sua mesa.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
